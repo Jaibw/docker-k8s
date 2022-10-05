@@ -68,4 +68,11 @@ kubectl describe svc website01
 kubectl get svc website01
 # Open http://EXTERNAL-IP
 
+## Deploy a website using YAML 
+kubectl create -f https://raw.githubusercontent.com/Jaibw/docker-k8s/master/website.yaml
+kubectl get all
+kubectl get pods -o wide
+kubectl get svc frozenyogurtshop
+# Open http://EXTERNAL-IP
+
 
