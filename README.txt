@@ -75,4 +75,22 @@ kubectl get pods -o wide
 kubectl get svc frozenyogurtshop
 # Open http://EXTERNAL-IP
 
+## Deploy a website using YAML - AutoScale 
+kubectl get nodes 
+kubectl create -f https://raw.githubusercontent.com/Jaibw/docker-k8s/master/website.yaml
+kubectl get all
+watch kubectl get all           # use Ctrl+C to exit 
+kubectl get nodes 
+kubectl get pods -o wide
+kubectl get svc frozenyogurtshop
+# Open http://EXTERNAL-IP
+kubectl delete -f https://raw.githubusercontent.com/Jaibw/docker-k8s/master/website.yaml
+kubectl get all
+kubectl get nodes 
+watch kubectl get nodes         # use Ctrl+C to exit
+
+
+
+
+
 
