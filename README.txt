@@ -53,3 +53,12 @@ kubectl describe pod demo01
 kubectl logs demo01
 kubectl delete pod demo01 
 
+# deployments 
+kubectl create deployment website01 --image=nginx 
+kubectl get deployment 
+kubectl get rs 
+kubectl get pods 
+kubectl get all 
+
+
+
