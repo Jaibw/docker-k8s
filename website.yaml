@@ -17,6 +17,13 @@ spec:
       containers:
       - name: frozenyogurtshop
         image: jaibw/frozenyogurtshop
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "1"
+          limits:
+            memory: "1Gi"
+            cpu: "1"
         ports:
         - containerPort: 80
 ---
