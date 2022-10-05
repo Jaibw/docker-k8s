@@ -60,5 +60,12 @@ kubectl get rs
 kubectl get pods 
 kubectl get all 
 
+# create/access a service 
+kubectl expose deployment website01 --type=LoadBalancer --port=80
+kubectl get all
+kubectl get pods -o wide
+kubectl describe svc website01
+kubectl get svc website01
+# Open http://EXTERNAL-IP
 
 
