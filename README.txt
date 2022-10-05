@@ -44,3 +44,12 @@ sudo docker ps
 sudo docker inspect demo | grep -i ipaddress
 curl 172.#.#.# | grep -i title
 
+# kubernetes commands 
+kubectl get nodes
+kubectl run demo01 --image=nginx
+kubectl get pods
+kubectl get pods -o wide
+kubectl describe pod demo01
+kubectl logs demo01
+kubectl delete pod demo01 
+
