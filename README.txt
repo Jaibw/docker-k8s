@@ -17,3 +17,16 @@ sudo docker pull python:2.7.18
 sudo docker images
 sudo docker pull python:3.9.14
 sudo docker images
+
+## creating containers 
+# host kernel version 
+sudo uname -a
+# containers kernel 
+sudo docker run ubuntu uname -a
+sudo docker run centos uname -a
+## Python containers 
+sudo docker run python:latest python --version
+sudo docker run python python --version
+sudo docker run python:2.7.18 python --version
+sudo docker run python:2.7.18 python -c "print('hello world')"
+sudo docker run python python:latest -c "print(3+4)"
