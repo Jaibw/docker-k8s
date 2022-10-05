@@ -30,3 +30,17 @@ sudo docker run python python --version
 sudo docker run python:2.7.18 python --version
 sudo docker run python:2.7.18 python -c "print('hello world')"
 sudo docker run python:latest python -c "print(3+4)"
+
+## Build and run 
+git clone https://github.com/Jaibw/FrozenYogurtShop.git
+cd FrozenYogurtShop/
+ls
+cat Dockerfile 
+sudo docker images
+sudo docker build -t website .
+sudo docker images
+sudo docker run -d --name demo website
+sudo docker ps 
+sudo docker inspect demo | grep -i ipaddress
+curl 172.#.#.# | grep -i title
+
