@@ -29,4 +29,4 @@ sudo docker run python:latest python --version
 sudo docker run python python --version
 sudo docker run python:2.7.18 python --version
 sudo docker run python:2.7.18 python -c "print('hello world')"
-sudo docker run python python:latest -c "print(3+4)"
+sudo docker run python:latest python -c "print(3+4)"
